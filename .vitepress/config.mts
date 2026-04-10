@@ -8,13 +8,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Guides", link: "/markdown-examples" },
+      { text: "Guides Git", link: "/markdown-examples" },
     ],
 
     sidebar: [
       {
-        text: "Guides",
+        text: "Guides Git",
         items: [
+          { text: "Conventional Commit", link: "/conventional_commit" },
           { text: "Resolusi Konflik Git", link: "/git-resolusi-konflik" },
           { text: "Panduan .gitignore", link: "/gitignore-guide" },
         ],
