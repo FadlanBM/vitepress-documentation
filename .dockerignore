@@ -1,0 +1,8 @@
+node_modules
+.vitepress/cache
+.vitepress/dist
+.git
+.gitignore
+Dockerfile
+.dockerignore
+vercel.json

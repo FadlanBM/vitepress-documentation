@@ -10,6 +10,8 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Guides Git", link: "/markdown-examples" },
+      { text: "Guides Docker", link: "/docker-guide" },
+      { text: "Guides Docker", link: "/devilbox-guide" },
     ],
 
     sidebar: [
@@ -20,6 +22,14 @@ export default defineConfig({
           { text: "Resolusi Konflik Git", link: "/git-resolusi-konflik" },
           { text: "Panduan .gitignore", link: "/gitignore-guide" },
         ],
+      },
+       {
+        text: "Guides Docker",
+        items: [{ text: "Panduan Docker", link: "/docker-guide" }],
+      },
+      {
+        text: "Guides Devilbox",
+        items: [{ text: "Panduan Devilbox", link: "/devilbox-guide" }],
       },
     ],
 
