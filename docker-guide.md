@@ -105,6 +105,25 @@ Jika menggunakan Compose, Anda bisa langsung menyebutkan nama servicenya:
 docker compose exec <nama_service> sh
 ```
 
+### 3. Mengakses Terminal di Devilbox
+Jika Anda menggunakan Devilbox, cara paling umum untuk masuk ke terminal PHP container adalah dari root direktori Devilbox dengan menjalankan:
+
+```bash
+./shell.sh
+```
+
+Jika ingin masuk langsung ke service tertentu melalui Docker Compose, Anda juga bisa menggunakan:
+
+```bash
+docker-compose exec php bash
+```
+
+Jika `bash` tidak tersedia pada container yang digunakan, ganti dengan `sh`:
+
+```bash
+docker-compose exec php sh
+```
+
 ### Tips:
 - Gunakan `exit` untuk keluar dari shell container.
 - Jika `bash` tidak ditemukan, coba gunakan `sh` sebagai alternatif.
@@ -116,4 +135,3 @@ docker compose exec <nama_service> sh
 | `docker system prune` | Menghapus semua container, network, dan image yang tidak terpakai. |
 | `docker container prune` | Menghapus semua container yang sudah stop. |
 | `docker image prune` | Menghapus image yang tidak memiliki tag (dangling). |
-
